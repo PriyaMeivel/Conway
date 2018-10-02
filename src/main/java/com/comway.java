@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * Created by meivelp on 2/10/2018.
  */
-public class Sample {
+public class Comway {
     public static void main(String[] args)
     {
         int M = 200, N = 200;
