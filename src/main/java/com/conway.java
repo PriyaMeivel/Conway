@@ -5,14 +5,16 @@ import java.util.List;
 /**
  * Created by meivelp on 2/10/2018.
  */
-public class Comway {
+public class Conway {
     public static void main(String[] args)
     {
         int M = 200, N = 200;
         int [] [] grid = new int[200][200];
 
-        final String initPosition = "[5,5], [6,5], [7,5], [5,6], [6,6], [7,6]";
-        List<String> initList = new ArrayList<>(Arrays.asList(initPosition.split(", ")));
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter the Current Generation of Conway Game of Life");
+        String inputStr = input.nextLine();
+        List<String> initList = new ArrayList<>(Arrays.asList(inputStr.split(", ")));
 
         System.out.println("Original Generation");
         for (int i = 0; i < M; i++)
